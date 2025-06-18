@@ -1,0 +1,126 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+ 
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5em;
+    background-color: aliceblue;
+    height: 100%;
+}
+.topHeader h2{
+    font-size: 32px;
+    font-weight: 600;
+}
+.bottomBorder{
+    width: 40%;
+    height: 4px;
+    background-color: rgb(69, 122, 165);
+    margin: auto;
+    border-radius: 12px;
+    margin-bottom: 2em;
+}
+.cardContainer{
+    width: 80%;
+}
+.flex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2em;
+    align-items: center;
+    justify-content: center;
+   
+
+}
+img{
+    max-width: 100%;         
+    width: 20em;            
+    display: block;         
+    margin: auto;           
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+.card{
+    max-width: 20em;
+    padding: 0px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 12px;
+}
+.details{
+    margin: 1em;
+    background-color: inherit;
+}
+.details h1 {
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+.rating{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 1em;
+    
+}
+p{
+    color: rgb(56, 55, 55);
+}
+span{
+    font-size: 12px;
+    text-align: start;
+    margin-left: 5px;
+}
+.currencyamount{
+    color: #2072dd;
+}
+i{
+    color: rgb(216, 202, 6);
+}
+button{
+    width: 100%;
+    padding-top: 0.8em;
+    padding-bottom: 0.8em;
+    border-radius: 10px;
+    margin-top: 1em;
+    color: white;
+    border: none;
+    background-image: linear-gradient(to right, #677BE4 ,#7453AC);
+}
+.lowerSection{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1em;
+    width: 90%;
+    height: auto;
+    margin-top: 3em;
+}
+.lowerCard{
+    width: 12em;
+    background-color: rgb(252, 252, 252);
+    height: 6em;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #1b75be;
+    border-radius: 8px;
+    padding-top:1.5em;
+    padding-bottom: 1.5em;
+}
+.lowerCard{
+    display: flex;
+    flex-direction: column;
+}
+.lowerCard h5 {
+    color: rgb(88, 85, 85);
+}
+.lowerSection .lowerCard h5{
+    color: rgb(129, 120, 120);
+}

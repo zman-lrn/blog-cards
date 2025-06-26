@@ -1,0 +1,132 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(240, 240, 240);
+}
+.mainContainer{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    max-width: 45em;
+}
+label{
+    font-size: medium;
+}
+.mainContainer2{
+    border: 1px solid black;
+    border-radius: 12px;
+    margin-top: 2em;
+    background-color: rgb(250, 250, 250);
+
+}
+.mainContainer h1{
+    color: rgb(20, 20, 20);
+    font-size: 32px;
+    text-align: center;
+    margin-top: 4rem;
+}
+.mainContainer p{
+    color: rgb(105, 101, 101);
+    font-weight: 200;
+    font-size: 18px;
+    text-align: center;
+}
+.subContainer{
+    width: 100%;
+    padding: 1em;
+
+}
+.subContainer p{
+    text-align: start;
+}
+.personalInfoContainer, .addressContainer, .accountInfoContainer, .additionalInfoContainer{
+    margin: 1em;
+}
+.personalInfoContainer h3{
+    text-align: start;
+}
+.nameContainer{
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+.nameContainer input{
+    display: block;
+}
+.subNameContainer, .subLastNameContainer{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-top: 1em;
+}
+.subNameContainer{
+    display: flex;
+    flex-direction: column;
+}
+
+.emailContainer #emailInput{
+    width: 100%;
+ 
+}
+.nameInput{
+    padding: 0.7em;
+    border-radius: 8px;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    border: 1px solid rgb(209, 207, 204);
+
+}
+.streetContainer{
+    margin-top: 1em;
+    display: flex;
+    flex-direction: column;
+}
+
+.emailContainer .checkbox{
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+
+.perferencesContainer h3{
+    margin-bottom: 1em;
+}
+.perferencesContainer .checkbox{
+    margin-bottom: 1em;
+    padding-left: 0.5em;
+
+}
+input[type="button"]{
+    background-color: rgb(27, 27, 27);
+    color: rgb(233, 227, 227);
+    padding: 1em;
+}
+a{
+    color: rgb(18, 18, 247);
+}
+@media only screen and (max-width: 645px) {
+    .nameContainer{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .subNameContainer, .subLastNameContainer{
+        width: 100%;
+    }
+  }
+  .streetContainer {
+    position: relative;
+    margin-bottom: 20px;
+  }
+  .toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 35px;
+    cursor: pointer;
+    font-size: 18px;
+    color: #555;
+    user-select: none;
+  }

@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Form</title>
+  </head>
+  <body>
+    <div class="mainContainer">
+      <h1>Create Your Account</h1>
+      <p>Join us today and get started</p>
+      <div class="mainContainer2">
+        <div class="subContainer">
+          <h2>Registration Form</h2>
+          <p>Please fill in all required fields to create your account</p>
+        </div>
+
+        <div class="personalInfoContainer">
+          <h3>Personal Information</h3>
+          <div class="nameContainer">
+            <div class="subNameContainer">
+              <label for="">First Name *</label>
+              <input
+                type="text"
+                required
+                name="name"
+                id="nameInput"
+                class="nameInput"
+                placeholder="John"
+              />
+            </div>
+            <div class="subLastNameContainer">
+              <label for="">Last Name *</label>
+              <input
+                type="text"
+                required
+                name="lastName"
+                id="lastNameInput"
+                class="nameInput"
+                placeholder="Doe"
+              />
+            </div>
+          </div>
+          <div class="emailContainer">
+            <label for="">Email Address *</label>
+            <input
+              type="email"
+              required
+              name="email"
+              id="emailInput"
+              class="nameInput"
+              placeholder="john.doe@example.com"
+            />
+          </div>
+          <div class="nameContainer">
+            <div class="subNameContainer">
+              <label for="">Phone Number *</label>
+              <input
+                type="tel"
+                required
+                name="phoneNum"
+                id="nameInput"
+                class="nameInput"
+                placeholder="John"
+              />
+            </div>
+            <div class="subLastNameContainer">
+              <label for="">Gender</label>
+              <select class="nameInput" name="gender" required>
+                <option value="" disabled selected>Select gender</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                |
+                <option value="Other">Other</option>
+                <option value="Prefer not to say">Prefer not to say</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="addressContainer">
+          <h3>Address Information</h3>
+          <div class="streetContainer">
+            <label for="">Street Address *</label>
+            <input
+              type="email"
+              required
+              name="street"
+              id="emailInput"
+              class="nameInput"
+              placeholder="john.doe@example.com"
+            />
+          </div>
+          <div class="nameContainer">
+            <div class="subNameContainer">
+              <label for="">City *</label>
+              <input
+                type="text"
+                required
+                name="city"
+                id="nameInput"
+                class="nameInput"
+                placeholder="New york"
+              />
+            </div>
+            <div class="subLastNameContainer">
+              <label for="">State/Province *</label>
+              <input
+                type="text"
+                required
+                name="state"
+                id="lastNameInput"
+                class="nameInput"
+                placeholder="NY"
+              />
+            </div>
+            <div class="subLastNameContainer">
+              <label for="">ZIP/Postal Code *</label>
+              <input
+                type="text"
+                required
+                name="postalCode"
+                id="lastNameInput"
+                class="nameInput"
+                placeholder="10001"
+              />
+            </div>
+          </div>
+          <div class="streetContainer">
+            <label for="">Country *</label>
+            <select class="nameInput" name="country" required>
+              <option value="" disabled selected>Select your country</option>
+              <option value="Ethiopia">Ethiopia</option>
+              <option value="United states">Keniya</option>
+              |
+              <option value="Canada">Canada</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+        </div>
+        <div class="accountInfoContainer">
+          <h3>Account Information</h3>
+          <div class="streetContainer">
+            <label for="">Username *</label>
+            <input
+              type="text"
+              required
+              name="userName"
+              id="emailInput"
+              class="nameInput"
+              placeholder="johndoe123"
+            />
+          </div>
+
+          <div class="streetContainer">
+            <label for="password">Password *</label>
+            <input
+              type="password"
+              required
+              name="password"
+              id="password"
+              class="nameInput"
+              placeholder="Enter your password"
+            />
+            <span
+              class="toggle-password"
+              onclick="togglePassword('password', this)"
+              >👁️</span
+            >
+          </div>
+
+          <div class="streetContainer">
+            <label for="confirmPassword">Confirm Password *</label>
+            <input
+              type="password"
+              required
+              name="confirmPassword"
+              id="confirmPassword"
+              class="nameInput"
+              placeholder="Confirm your password"
+            />
+            <span
+              class="toggle-password"
+              onclick="togglePassword('confirmPassword', this)"
+              >👁️</span
+            >
+          </div>
+        </div>
+        <div class="additionalInfoContainer">
+          <h3>Additional Information</h3>
+          <div class="streetContainer">
+            <label for="">Occupation</label>
+            <input
+              type="text"
+              name="occupation"
+              id="emailInput"
+              class="nameInput"
+              placeholder="Software Developer"
+            />
+          </div>
+          <div class="streetContainer">
+            <label for="">Company/Organization</label>
+            <input
+              type="password"
+              name="company"
+              id="emailInput"
+              class="nameInput"
+              placeholder="Acme Corp"
+            />
+          </div>
+          <div class="streetContainer">
+            <label for="">Bio/About Yourself</label>
+            <textarea
+              type="password"
+              required
+              name="bio"
+              id="emailInput"
+              class="nameInput"
+              placeholder="Tell us about yourself"
+            >
+            </textarea>
+          </div>
+          <div class="emailContainer">
+            <label for="">Website/Portfolio</label>
+            <input
+              type="email"
+              name="portfolio"
+              id="emailInput"
+              class="nameInput"
+              placeholder="https://www.example.com"
+            />
+          </div>
+          <div class="errOrSuccesMs">
+            <p></p>
+          </div>
+          <div class="perferencesContainer">
+            <h3>Perferences</h3>
+            <label
+              ><input
+                type="checkbox"
+                name="perferences"
+                value="Subscribe"
+                class="checkbox"
+                required
+              />
+              Subscribe to our newsletter for updates and promotions</label
+            ><br />
+            <label
+              ><input
+                type="checkbox"
+                name="perferences"
+                value="marketingCommunications"
+                class="checkbox"
+                required
+              />
+              Receive marketing communications</label
+            ><br />
+            <label
+              ><input
+                type="checkbox"
+                name="perferences"
+                value="agree"
+                class="checkbox"
+                required
+              />
+              I agree to the <a href="">Terms of Service</a> and
+              <a href="">Privacy Policy</a> *</label
+            >
+          </div>
+          <div class="emailContainer">
+            <input
+              type="button"
+              value="Create Account"
+              id="emailInput"
+              class="nameInput"
+              onclick="submitForm()"
+              placeholder="https://www.example.com"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./formValidation.js"></script>
+  </body>
+</html>
